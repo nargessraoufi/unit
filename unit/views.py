@@ -27,10 +27,10 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 
-@api_view(['GET'])
+@api_view(['POST'])
 def convert_grams(request):
     # دریافت مقدار گرم از پارامتر ورودی
-    grams = request.query_params.get('grams', None)
+    grams = request.data.get("value")
 
     if grams is None:
         return Response({"error": "لطفاً مقدار گرم را وارد کنید."}, status=400)
