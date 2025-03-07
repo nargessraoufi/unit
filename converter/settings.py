@@ -63,7 +63,7 @@ MIDDLEWARE = [
 
 # CORS_ALLOW_HEADERS = ["content-type",]
 
-# ROOT_URLCONF = 'converter.urls'
+ROOT_URLCONF = 'converter.urls'
 
 TEMPLATES = [
     {
