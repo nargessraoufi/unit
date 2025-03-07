@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-CORS_ALLOW_ALL_ORIGINS = True
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -26,7 +25,7 @@ SECRET_KEY = 'django-insecure-&0!d39h+50dbk3o+4$xw-_@bjbnk2tf5g$vprof@9s!icg^7a&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -62,6 +61,8 @@ MIDDLEWARE = [
 # ]
 
 # CORS_ALLOW_HEADERS = ["content-type",]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 ROOT_URLCONF = 'converter.urls'
 
