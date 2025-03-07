@@ -16,10 +16,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from unit.views import converter
+from unit.views import convert_grams , hello_world
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('convert/',converter),
+    path('convert-grams/', convert_grams, name='convert_grams'),
+    path('hello/', hello_world, name='hello_world'),
 ]
 
