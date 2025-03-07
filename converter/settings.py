@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middlewear.common.CommonMid',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -51,7 +52,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middlewear.CorsMiddleware',
-    'corsheaders.middlewear.common.CommonMid',
+    
     ]
 
 # CORS_ALLOWED_METHODS = [
@@ -64,7 +65,7 @@ MIDDLEWARE = [
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-ROOT_URLCONF = 'converter.urls'
+# ROOT_URLCONF = 'converter.urls'
 
 TEMPLATES = [
     {
