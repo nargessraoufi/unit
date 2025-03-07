@@ -55,6 +55,14 @@ MIDDLEWARE = [
     'corsheaders.middlewear.common.CommonMid',
     ]
 
+CORS_ALLOWED_METHODS = [
+    "GET",
+    "POST",
+    "OPTIONS",
+]
+
+CORS_ALLOW_HEADERS = ["content-type",]
+
 ROOT_URLCONF = 'converter.urls'
 
 TEMPLATES = [
