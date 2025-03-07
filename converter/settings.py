@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&0!d39h+50dbk3o+4$xw-_@bjbnk2tf5g$vprof@9s!icg^7a&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['unit-converter.liara.run']
 
 
 # Application definition
@@ -43,7 +43,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middlewear.common.CommonMid',
+    'corseheaders.middlewear.common.CommonMid',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -55,17 +55,17 @@ MIDDLEWARE = [
     
     ]
 
-# CORS_ALLOWED_METHODS = [
-#     "GET",
-#     "POST",
-#     "OPTIONS",
-# ]
+CORS_ALLOWED_METHODS = [
+    "GET",
+    "POST",
+    "OPTIONS",
+]
 
-# CORS_ALLOW_HEADERS = ["content-type",]
+CORS_ALLOW_HEADERS = ["content-type",]
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-# ROOT_URLCONF = 'converter.urls'
+ROOT_URLCONF = 'converter.urls'
 
 TEMPLATES = [
     {
