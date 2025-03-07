@@ -51,8 +51,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middlewear.CorsMiddleware'
-]
+    'corsheaders.middlewear.CorsMiddleware',
+    'corsheaders.middlewear.common.CommonMid',
+    ]
 
 ROOT_URLCONF = 'converter.urls'
 
