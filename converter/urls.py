@@ -20,6 +20,6 @@ from unit.views import converter
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    
+    path('convert/',converter),
 ]
 
